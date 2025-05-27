@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <script defer src="./js/dropdownlist.js"></script>
+    <script defer src="./js/recipe.js"></script>
+    <script defer src="./js/account.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>ВкусДома кулинарные рецепты</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="text"><span class="firstlogo">Вкус</span> <span class="secondlogo">Дома</span>
+            <div class="main"><a href="./index.html">Главная</a></div>
+            <div class="resep"><a href="./recipes.html">Рецепты</a></div>
+            <div class="blog"><a href="./blog.html">Блог</a></div>
+            <div class="con"><a href="./contacts.html">Контакты</a></div>
+            <input class="search" type="text" placeholder="Поиск..."></input>
+
+            <div class="a"><button class="abtn">A</button></div>
+        </p>
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./recipes.html">Рецепты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a class="accountcab" role="button">Личный кабинет</button></li>
+                    <li><a href="./favorit.html">Избранные рецепты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="ffh1">Быстрые блюда<br>Приготовьте себе сытную еду за короткий срок</div>
+
+        <div class="ffrs">
+            <div class="recipe1">
+                <img src="./Image/image 2.jpg" alt="">
+                <div class="recipe1txt">Салат помидоры со сметаной</div>
+                <div class="recipe1txt2">Сочный салат из свежих помидоров<br> со сметаной — лёгкий, нежный<br> и освежающий.
+                </div>
+                <div class="clock-warp">
+                    <img class="clockrecipe1" src="./Image/clock.jpg" alt="">
+                    <div class="clockrecipe1txt">15 мин</div>
+                </div>
+
+                <div class="calories-warp">
+                    <img class="caloriesrecipe1" src="./Image/calories.jpg" alt="">
+                    <div class="caloriesrecipe1txt">63 калл</div>
+                </div>
+
+
+                <button class="recipe1btn">Читать подробнее</button>
+            </div>
+            <div class="recipe2">
+                <img src="./Image/image.jpg" alt="">
+                <div class="recipe2txt">Каша из киноа на воде</div>
+                <div class="recipe2txt2">Питательная каша из киноа на воде — лёгкий и полезный завтрак, богатый белком и аминокислотами.
+                </div>
+                <div class="clock-warp">
+                    <img class="clockrecipe2" src="./Image/clock.jpg" alt="">
+                    <div class="clockrecipe2txt">30 мин</div>
+                </div>
+                <div class="calories-warp">
+                    <img class="caloriesrecipe2" src="./Image/calories.jpg" alt="">
+                    <div class="caloriesrecipe2txt">123 калл</div>
+                </div>
+
+
+                <button class="recipe2btn" href="./recipe2.html">Читать подробнее</button>
+            </div>
+            <div class="recipe3">
+                <img src="./Image/image.jpg" alt="">
+                <div class="recipe3txt">Каша из киноа на воде</div>
+                <div class="recipe3txt2">Питательная каша из киноа на воде — лёгкий и полезный завтрак, богатый белком и аминокислотами.
+                </div>
+                <div class="clock-warp">
+                    <img class="clockrecipe3" src="./Image/clock.jpg" alt="">
+                    <div class="clockrecipe3txt">30 мин</div>
+                </div>
+                <div class="calories-warp">
+                    <img class="caloriesrecipe3" src="./Image/calories.jpg" alt="">
+                    <div class="caloriesrecipe3txt">123 калл</div>
+                </div>
+
+
+                <button class="recipe3btn" href="./recipe3.html">Читать подробнее</button>
+            </div>
+        </div>
+
+<!--Рецепт 1-->
+
+  <div class="overlay" id="recipeOverlay">
+    <div class="modal">
+      <div class="close-button">X</div>
+      <div class = "modalname">Салат помидоры со сметаной</div>
+      <div class = "modalcookandtime">
+      <div class = "modalcook"><img src = "./Image/icon-park-outline_pot.svg">2 порции</div>
+      <div class = "modaltime"><img src = "./Image/mdi_clock-outline.svg">30 минут</div>
+    </div>
+    <div class = "modalimg">
+      <img src="./Image/image 2.svg" alt="Салат с помидорами">
+    </div>
+    <div class = "ingr">Ингредиенты</div>
+<ul class="ingredients">
+  <li><span class="name">Соль</span><span class="dots"></span><span class="amount">по вкусу</span></li>
+  <li><span class="name">Петрушка</span><span class="dots"></span><span class="amount">1 пучок</span></li>
+  <li><span class="name">Укроп</span><span class="dots"></span><span class="amount">1 пучок</span></li>
+  <li><span class="name">Чеснок</span><span class="dots"></span><span class="amount">2 зубчика</span></li>
+  <li><span class="name">Сметана</span><span class="dots"></span><span class="amount">2 столовые ложки</span></li>
+  <li><span class="name">Помидоры</span><span class="dots"></span><span class="amount">3 штуки</span></li>
+</ul>
+      <h3 class = "inst">Инструкция приготовления</h3>
+      <ol class="instructions">
+       
+        <li>Помидоры помыть и нарезать крупными дольками.</li>
+        <li>Зелень измельчить (должно быть много).</li>
+        <li>Заправить помидоры сметаной и зеленью, аккуратно перемешать, чтобы не выделялся лишний сок.</li>
+      </ol>
+    </div>
+  </div>
+
+    </main>
+    <div class="autoFormfon">
+    </div>
+    <!--Авторизация-->
+    <form id="authForm" action="./index.html" method="POST">
+        <div class="authorizationForm">
+            <div class = "authclosebtn">X</div>
+            <div class="authorizationFormat">Авторизация</div>
+            <div class="authorizationInput">
+                <input class="email" id="email" type="email" placeholder="email..." required>
+                <input class="password" id="password" type="password" placeholder="pass..." required>
+            </div>
+            <div class="authbtn">
+                <button class="authorizationBtn" id="authorizationBtn" type="submit">Войти</button>
+                <a class="authorizationchoice" href="#">Ещё нет аккаунта?</a>
+            </div>
+        </div>
+    </form>
+    <!--Регистрация-->
+    <form id="authForm" action="./index.html" method="POST">
+        <div class="authorizationForm">
+            <div class = "authclosebtn">X</div>
+            <div class="authorizationFormat">Регистрация</div>
+            <div class="authorizationInput">
+                <input class="email" id="email" type="email" placeholder="email..." required>
+                <input class="password" id="password" type="password" placeholder="pass..." required>
+            </div>
+            <div class="authbtn">
+                <button class="authorizationBtn" id="authorizationBtn" type="submit">Регистрация</button>
+                <a class="authorizationchoice" href="#">Уже есть аккаунт?</a>
+            </div>
+        </div>
+    </form>
+</body>
+<footer>
+    <div class="ftr">💡 Совет дня: Добавляйте щепотку соли в сладкие блюда — вкус станет ярче!</div>
+</footer>
+
+</html>

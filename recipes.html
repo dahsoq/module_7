@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/dropdownlist.js"></script>
+    <script defer src="./js/category.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/global.css" />
+    <script defer src="./js/account.js"></script>
+    <title>ВкусДома кулинарные рецепты</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="text"><span class="firstlogo">Вкус</span> <span class="secondlogo">Дома</span>
+            <div class="main"><a href="./index.html">Главная</a></div>
+            <div class="resep"><a href="./recipes.html">Рецепты</a></div>
+            <div class="blog"><a href="./blog.html">Блог</a></div>
+            <div class="con"><a href="./contacts.html">Контакты</a></div>
+            <input class="search" type="text" placeholder="Поиск..."></input>
+
+            <div class="a"><button class="abtn">A</button></div>
+        </p>
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./recipes.html">Рецепты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a class="accountcab" role="button">Личный кабинет</button></li>
+                    <li><a href="./favorit.html">Избранные рецепты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="categortxt">Категории</div>
+        <div class="categorimg">
+            <div class="imgcontainer">
+                <img src="./Image/Group 7.jpg" alt="" id="group7"></a>
+                <img src="./Image/Group 8.jpg" alt="" id="group8"></a>
+                <img src="./Image/Group 9.jpg" alt="" id="group9"></a>
+                <img src="./Image/Group 10.jpg" alt="" id="group10"></a>
+                <img src="./Image/Group 11.jpg" alt="" id="group11"></a>
+                <img src="./Image/Group 15.jpg" alt="" id="group15"></a>
+            </div>
+        </div>
+
+
+    </main>
+    <div class="autoFormfon">
+    </div>
+    <!--Авторизация-->
+    <form id="authForm" action="./index.html" method="POST">
+        <div class="authorizationForm">
+            <div class = "authclosebtn">X</div>
+            <div class="authorizationFormat">Авторизация</div>
+            <div class="authorizationInput">
+                <input class="email" id="email" type="email" placeholder="email..." required>
+                <input class="password" id="password" type="password" placeholder="pass..." required>
+            </div>
+            <div class="authbtn">
+                <button class="authorizationBtn" id="authorizationBtn" type="submit">Войти</button>
+                <a class="authorizationchoice" href="#">Ещё нет аккаунта?</a>
+            </div>
+        </div>
+    </form>
+    <!--Регистрация-->
+    <form id="authForm" action="./index.html" method="POST">
+        <div class="authorizationForm">
+            <div class = "authclosebtn">X</div>
+            <div class="authorizationFormat">Регистрация</div>
+            <div class="authorizationInput">
+                <input class="email" id="email" type="email" placeholder="email..." required>
+                <input class="password" id="password" type="password" placeholder="pass..." required>
+            </div>
+            <div class="authbtn">
+                <button class="authorizationBtn" id="authorizationBtn" type="submit">Регистрация</button>
+                <a class="authorizationchoice" href="#">Уже есть аккаунт?</a>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="ftr">💡 Совет дня: Добавляйте щепотку соли в сладкие блюда — вкус станет ярче!</div>
+    </footer>
+
+</html>
