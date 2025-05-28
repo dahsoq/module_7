@@ -26,7 +26,7 @@ function displayComments() {
   comments.forEach((c) => {
     const div = document.createElement("div");
     div.innerHTML = `<strong>${c.username}</strong> (${c.timestamp}):<br>${c.text}<hr>`;
-    commentsContainer.appendChild(div); // Добавляем в контейнер
+    commentsContainer.appendChild(div);
   });
 }
 

@@ -479,7 +479,21 @@ main {
 .autoFormfon.open {
   display: block;
 }
-
+.commentForm {
+  margin: 3%;
+  display: grid;
+  justify-items: center;
+}
+.commentbtn,
+.username,
+.commentText {
+  margin: 1%;
+  font-size: 20px;
+}
+.commentbtn {
+  border-radius: 20px;
+  background-color: #dd8117;
+}
 /* Медиа-запросы */
 
 @media (min-width: 441px) and (max-width: 834px) {
